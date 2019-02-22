@@ -1,2 +1,2 @@
-# S05_TestingGrounds
+# TestingGrounds
 FPS Hunger Games-style game.

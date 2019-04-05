@@ -568,6 +568,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.cpp" />
+		<ClInclude Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.h" />
 		<None Include="..\..\Source\TestingGrounds\TestingGrounds.Build.cs" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGrounds.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGrounds.h" />

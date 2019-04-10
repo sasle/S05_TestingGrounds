@@ -572,6 +572,8 @@
 		<ClInclude Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\PatrollingGuar.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\PatrollingGuar.h" />
+		<ClCompile Include="..\..\Source\TestingGrounds\PatrolRoute.cpp" />
+		<ClInclude Include="..\..\Source\TestingGrounds\PatrolRoute.h" />
 		<None Include="..\..\Source\TestingGrounds\TestingGrounds.Build.cs" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGrounds.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGrounds.h" />

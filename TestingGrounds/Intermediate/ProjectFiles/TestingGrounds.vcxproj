@@ -124,7 +124,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{69969460-C71B-4F9E-A91B-DD967093061E}</ProjectGuid>
+		<ProjectGuid>{D034E17A-B2D8-4959-9EB1-1E6907363720}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>TestingGrounds</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>
@@ -570,8 +570,6 @@
 		<None Include="..\..\Config\DefaultInput.ini" />
 		<ClCompile Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.h" />
-		<ClCompile Include="..\..\Source\TestingGrounds\PatrollingGuar.cpp" />
-		<ClInclude Include="..\..\Source\TestingGrounds\PatrollingGuar.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\PatrolRoute.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\PatrolRoute.h" />
 		<None Include="..\..\Source\TestingGrounds\TestingGrounds.Build.cs" />

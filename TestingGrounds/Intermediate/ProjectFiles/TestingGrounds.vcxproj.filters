@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\TestingGrounds.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{AF99A113-C8C8-486F-BECB-BE5528ECC51B}</UniqueIdentifier>
+			<UniqueIdentifier>{F1150007-C392-430F-AB9E-ADFDA6C324B7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\TestingGrounds.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{C4C30C32-34D7-4A1E-BF34-3F62DB4C2CC8}</UniqueIdentifier>
+			<UniqueIdentifier>{3BA82FBF-3413-448F-BD95-11F46E44C4C3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,18 +31,12 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\TestingGrounds">
-			<UniqueIdentifier>{02B6A006-9CAC-4BC0-B9BC-B1C7DF6EF78B}</UniqueIdentifier>
+			<UniqueIdentifier>{238B5623-91FF-463D-81A7-596E966661B8}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.cpp">
 			<Filter>Source\TestingGrounds</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\TestingGrounds\ChooseNextWaypoint.h">
-			<Filter>Source\TestingGrounds</Filter>
-		</ClInclude >
-		<ClCompile Include="..\..\Source\TestingGrounds\PatrollingGuar.cpp">
-			<Filter>Source\TestingGrounds</Filter>
-		</ClCompile >
-		<ClInclude Include="..\..\Source\TestingGrounds\PatrollingGuar.h">
 			<Filter>Source\TestingGrounds</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\TestingGrounds\PatrolRoute.cpp">
@@ -85,7 +79,7 @@
 			<Filter>Source\TestingGrounds</Filter>
 		</ClInclude >
 		<Filter Include="Source\TestingGrounds\TP_ThirdPerson">
-			<UniqueIdentifier>{E2AF64AB-49EC-482C-B517-26373C0E54FE}</UniqueIdentifier>
+			<UniqueIdentifier>{E5210050-AB78-4E24-8E52-E7F6D04F1F5D}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\TestingGrounds\TP_ThirdPerson\TP_ThirdPerson.h">
 			<Filter>Source\TestingGrounds\TP_ThirdPerson</Filter>

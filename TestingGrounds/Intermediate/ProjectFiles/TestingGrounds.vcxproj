@@ -575,14 +575,14 @@
 		<None Include="..\..\Source\TestingGrounds\TestingGrounds.Build.cs" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGrounds.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGrounds.h" />
-		<ClCompile Include="..\..\Source\TestingGrounds\TestingGroundsCharacter.cpp" />
-		<ClInclude Include="..\..\Source\TestingGrounds\TestingGroundsCharacter.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGroundsGameMode.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGroundsGameMode.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGroundsHUD.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGroundsHUD.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TestingGroundsProjectile.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TestingGroundsProjectile.h" />
+		<ClCompile Include="..\..\Source\TestingGrounds\Player\FirstPersonCharacter.cpp" />
+		<ClInclude Include="..\..\Source\TestingGrounds\Player\FirstPersonCharacter.h" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TP_ThirdPerson\TP_ThirdPerson.h" />
 		<ClCompile Include="..\..\Source\TestingGrounds\TP_ThirdPerson\TP_ThirdPersonCharacter.cpp" />
 		<ClInclude Include="..\..\Source\TestingGrounds\TP_ThirdPerson\TP_ThirdPersonCharacter.h" />

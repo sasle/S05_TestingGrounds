@@ -35,15 +35,21 @@ void AMannequin::BeginPlay()
 		return;
 	}
 	Gun = GetWorld()->SpawnActor<AGun>(GunBlueprint);
-	if (IsPlayerControlled()) {
-		Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
-	}
-	else {
-		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint_0")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+	if (Gun)
+	{
+		if (IsPlayerControlled()) {
+			Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+			
+		}
+		else {
+			Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint_0")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+			
+		}
+		Gun->AnimInstance1P = Mesh1P->GetAnimInstance();
+		Gun->AnimInstance3P = GetMesh()->GetAnimInstance();
 	}
 
-	Gun->AnimInstance1P = Mesh1P->GetAnimInstance();
-	Gun->AnimInstance3P = GetMesh() -> GetAnimInstance();
+	
 
 	if (InputComponent != nullptr) {
 		InputComponent->BindAction("Fire", IE_Pressed, this, &AMannequin::PullTrigger);
@@ -66,10 +72,25 @@ void AMannequin::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 void AMannequin::UnPossessed()
 {
 	Super::UnPossessed();
-	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint_0")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+	if (Gun)
+	{
+		if (IsPlayerControlled()) {
+			Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+
+		}
+		else {
+			Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint_0")); //Attach gun mesh component to Skeleton, doing it here because the skelton is not yet created in the constructor
+
+		}
+		Gun->AnimInstance1P = Mesh1P->GetAnimInstance();
+		Gun->AnimInstance3P = GetMesh()->GetAnimInstance();
+	}
 }
 
 void AMannequin::PullTrigger()
 {
 	Gun->OnFire();
 }
+
+
+
